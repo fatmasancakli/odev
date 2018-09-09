@@ -1,0 +1,315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<style>
+
+.icons img{
+    margin:1%;
+}
+
+.selecttab {
+    border: 1px solid green;
+    width: 100%;
+    margin-bottom: 3%;
+    
+}
+
+.tab {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.tabresult {
+    background-color: #eee;
+}
+
+.caption {
+    background-color: #fff;
+}
+
+.textbox {
+    text-decoration: underline;
+}
+
+
+#newform {
+    display: none;
+}
+
+#existingform {
+    display: none;
+}
+
+.tabselection {
+    padding-top: 3%;
+    font-size: 30px;
+}
+
+.viewtext {
+    text-align: center;
+    margin-top: -2%;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    background: #fff;
+}
+
+#tab1selectionlist {
+    display: none;
+}
+
+#tab2selectionlist {
+    display: none;
+}
+
+#tab3selectionlist {
+    display: none;
+}
+
+</style>
+
+</h:head>
+
+<h:body>
+
+
+<div class="container">
+	<div class="row">
+	    <div class="col-lg-12">
+	        <div class="row text-center tab">
+	            <div class="col-lg-5">
+	                <button class="btn btn-default selecttab" id="newformlink">Ürün Ekle</button>
+	            </div>
+	           
+	            <div class="col-lg-2">
+	                <p>veya</p>    
+	            </div>
+	            <div class="col-lg-5">
+	                <button class="btn btn-default selecttab" id="existingformlink">Ürün Sayfası</button>
+	            </div>
+	            
+	       </div>
+	       <div class="row tabresult">
+	           
+
+         <div class="" id="newform">
+             <div class="row text-center textbox">
+	               <h3>Ürün Ekleme Sayfasına Hoşgeldiniz</h3>
+	           </div>
+	     <div>
+	     <h:inputText value="Adı" />
+	     <br/>
+	     <br/>
+	     <h:inputText value="Türü" />
+	     <br/>
+	     <br/>
+	     <h:inputText value="Açıklama" />
+	     <br/>
+	     <br/>
+	     <h:inputText value="Resim URL" />
+	     <br/>
+	     <br/>
+	     <h:inputText value="Fiyat" />
+	     <br/>
+	     <br/>
+	     <h:inputText value="Adet" />
+	     <br/>
+	     <br/>
+	     <h:commandButton  class="btn btn-danger" action="#{indexBean.kaydet}" value="Kaydet"/>
+	   
+	     
+	     
+	     
+	     </div>
+
+
+         </div> 
+         
+         
+         
+        <div class="" id="tab1selectionlist">
+          <div class="col-lg-4">
+              <div class="text-center">
+                  <h4 class="tabselection">1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+          
+            <div class="col-lg-4">
+              <div class="text-center">
+                  <h4 class="tabselection">2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+        
+          <div class="col-lg-4">
+              <div class="text-center">
+                  <h4 class="tabselection">3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+          
+         </div> 
+         
+         
+         <div class="" id="tab2selectionlist">
+          <div class="col-lg-4">
+              <div class="text-center">
+                <h4 class="tabselection">4</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+          
+            <div class="col-lg-4">
+              <div class="text-center">
+                <h4 class="tabselection">5</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+        
+          <div class="col-lg-4">
+              <div class="text-center">
+                <h4 class="tabselection">6</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+          
+         </div>  
+         
+         
+         <div class="" id="tab3selectionlist">
+          <div class="col-lg-4">
+              <div class="text-center">
+                <h4 class="tabselection">7</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+          
+            <div class="col-lg-4">
+              <div class="text-center">
+                <h4 class="tabselection">8</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+        
+          <div class="col-lg-4">
+              <div class="text-center">
+                <h4 class="tabselection">9</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+          
+         </div>  
+         
+         
+         <div class="" id="existingform">
+             <div class="row text-center textbox">
+	               <h3>Welcome to update existing application</h3>
+	           </div>
+          <div class="col-lg-4">
+              <div class="caption">
+                <h4>Thumbnail</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+                
+            </div>
+          </div>
+          
+            <div class="col-lg-4">
+              <div class="caption">
+                <h4>Thumbnail</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+               
+            </div>
+          </div>
+        
+          <div class="col-lg-4">
+              <div class="caption">
+                <h4>Thumbnail</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, soluta, eligendi doloribus sunt minus amet sit debitis repellat. Consectetur, culpa itaque odio similique suscipit</p>
+            </div>
+          </div>
+          
+         </div> 
+         
+        
+        
+	   
+	           
+	       </div>
+	    </div>
+	</div>
+</div>
+
+<script>
+$(function() {
+
+    $('#newformlink').click(function(e) {
+		$("#newform").delay(100).fadeIn(100);
+ 		$("#existingform").fadeOut(100);
+		$('#existingformlink').removeClass('active');
+		
+	});
+	
+	$('#existingformlink').click(function(e) {
+		$("#existingform").delay(100).fadeIn(100);
+ 		$("#newform").fadeOut(100);
+ 		$("#tab1selectionlist").fadeOut(100);
+ 		$("#tab2selectionlist").fadeOut(100);
+ 		$("#tab3selectionlist").fadeOut(100);
+		$('#newformlink').removeClass('active');
+		$('#tab2selection').removeClass('active');
+		$('#tab3selection').removeClass('active');
+		$('#tab1selection').removeClass('active');
+		
+	});
+	
+	$('#tab1selection').click(function(e) {
+		$("#tab1selectionlist").delay(100).fadeIn(100);
+ 		$("#tab2selectionlist").fadeOut(100);
+ 		$("#tab3selectionlist").fadeOut(100);
+		$('#tab2selection').removeClass('active');
+		$('#tab3selection').removeClass('active');
+		$('#tab1selection').removeClass('active');
+		
+	});
+	
+	$('#tab2selection').click(function(e) {
+		$("#tab2selectionlist").delay(100).fadeIn(100);
+ 		$("#tab1selectionlist").fadeOut(100);
+ 		$("#tab3selectionlist").fadeOut(100);
+		$('#tab1selection').removeClass('active');
+		$('#tab3selection').removeClass('active');
+		
+	});
+	
+	$('#tab3selection').click(function(e) {
+		$("#tab3selectionlist").delay(100).fadeIn(100);
+ 		$("#tab1selectionlist").fadeOut(100);
+ 		$("#tab2selectionlist").fadeOut(100);
+		$('#tab1selection').removeClass('active');
+		$('#tab2selection').removeClass('active');
+		
+	});
+	
+	
+
+});
+
+
+</script>
+
+</h:body>
+
+
+</html>
