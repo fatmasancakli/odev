@@ -108,22 +108,28 @@
 	               <h3>Ürün Ekleme Sayfasına Hoşgeldiniz</h3>
 	           </div>
 	     <div>
-	     <h:inputText value="Adı" />
+	     <h:outputLabel value="Ürünün Adını Giriniz...:" />
+	     <h:inputText value="#{urunekleBean.urun.ad}" />
 	     <br/>
 	     <br/>
-	     <h:inputText value="Türü" />
+	      <h:outputLabel value="Ürünün Türünü Giriniz...:" />
+	     <h:inputText value="#{urunekleBean.urun.tur}" />
 	     <br/>
 	     <br/>
-	     <h:inputText value="Açıklama" />
+	      <h:outputLabel value="Ürünün Açıklamasını Giriniz...:" />
+	     <h:inputText value="#{urunekleBean.urun.aciklama}" />
 	     <br/>
 	     <br/>
-	     <h:inputText value="Resim URL" />
+	      <h:outputLabel value="Ürün Resminin URL'sini Giriniz...:" />
+	     <h:inputText value="#{urunekleBean.urun.resimurl}" />
 	     <br/>
 	     <br/>
-	     <h:inputText value="Fiyat" />
+	      <h:outputLabel value="Ürünün Fiyatını Giriniz...:" />
+	     <h:inputText value="#{urunekleBean.urun.fiyat}" />
 	     <br/>
 	     <br/>
-	     <h:inputText value="Adet" />
+	      <h:outputLabel value="Ürünün Miktarını Giriniz...:" />
+	     <h:inputText value="#{urunekleBean.urun.adet}" />
 	     <br/>
 	     <br/>
 	     <h:commandButton  class="btn btn-danger" action="#{indexBean.kaydet}" value="Kaydet"/>

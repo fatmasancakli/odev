@@ -9,6 +9,7 @@ import javax.faces.bean.SessionScoped;
 import com.vektorel.Dal.tblurundao;
 import com.vektorel.Models.tblurun;
 
+@SuppressWarnings("deprecation")
 @ManagedBean(name="indexBean")
 @SessionScoped
 public class indexBean {
